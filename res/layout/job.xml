@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="启动一个耗时任务："
+        />
+    <Button 
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start a job"
+        />
+    
+    <TextView
+        android:id="@+id/tvresult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="null"
+        />
+    <View 
+        android:layout_width="match_parent"
+        android:background="@android:color/background_dark"
+        android:layout_height="2dip"
+        />
+    
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="启动一个延迟任务"
+        />
+    <Button 
+        android:id="@+id/startDelay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start a Delay Job"
+        />
+    
+    <TextView
+        android:id="@+id/tvresultDelay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="null"
+        />
+    
+
+</LinearLayout>

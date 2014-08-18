@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <Button
+        android:id="@+id/btn_add_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加下载"
+        />
+    <Button
+        android:id="@+id/btn_cancel_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="取消下载"
+        />
+    
+  
+<RelativeLayout 
+    android:id="@+id/down_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    >
+    <LinearLayout 
+        android:id="@+id/line_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+         <ProgressBar 
+	        android:id="@+id/pbar"
+	        android:layout_width="0dip"
+	        android:layout_height="3dip"
+	        android:max="100"
+	        android:progress="0"
+	        android:layout_marginTop="15dip"
+	        style="?android:attr/progressBarStyleHorizontal"
+	        android:layout_marginRight="8dip"
+	        android:layout_marginLeft="10dip"
+	        android:progressDrawable="@drawable/phone_down_progress_drawable"
+	        android:layout_weight="10"
+	        />
+	      <ImageView 
+	        android:id="@+id/img_start_pause"
+	        android:layout_width="0dip"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="2"
+	        android:visibility="gone"
+	        android:layout_alignParentRight="true"
+	        
+	        />
+	   
+    </LinearLayout>
+     <TextView 
+         android:id="@+id/tv_down_size"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/line_progress"
+         android:layout_alignParentLeft="true"
+         />
+     
+      <TextView 
+         android:id="@+id/tv_down_speed"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_below="@id/line_progress"
+         android:layout_marginLeft="10dip"
+         />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:layout_below="@id/line_progress"
+        android:gravity="center_vertical"
+        >
+    </RelativeLayout>
+</RelativeLayout>
+    
+    
+    
+    
+
+</LinearLayout>

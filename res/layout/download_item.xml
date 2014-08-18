@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout 
+        android:id="@+id/line_progress"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        >
+         <ProgressBar 
+	        android:id="@+id/pbar"
+	        android:layout_width="0dip"
+	        android:layout_height="5dip"
+	        android:max="100"
+	        android:progress="0"
+	        style="?android:attr/progressBarStyleHorizontal"
+	        android:layout_marginRight="3dip"
+	        android:layout_marginLeft="10dip"
+	        android:progressDrawable="@drawable/phone_down_progress_drawable"
+	        android:layout_gravity="center_vertical"
+	        android:layout_weight="10"
+	        />
+	      <com.universal.framwork.customview.DontPressWithParentImageView
+	        android:id="@+id/img_start_pause"
+	        android:layout_width="0dip"
+	        android:layout_height="30dip"
+	        android:src="@drawable/down_load_waiting_selector"
+	        android:layout_weight="2"
+	        android:layout_alignParentRight="true"
+	        
+	        />
+	   
+    </LinearLayout>
+     <TextView 
+         android:id="@+id/tv_down_size"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/line_progress"
+         android:layout_alignParentLeft="true"
+         android:text="10M/13M"
+         />
+     
+      <TextView 
+         android:id="@+id/tv_down_speed"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_below="@id/line_progress"
+         android:layout_marginRight="20dip"
+         android:text="100KB/s"
+         />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:layout_below="@id/line_progress"
+        android:gravity="center_vertical"
+        >
+    </RelativeLayout>
+</RelativeLayout>
