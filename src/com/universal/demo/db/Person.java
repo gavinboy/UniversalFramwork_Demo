@@ -4,6 +4,7 @@ import com.universal.framwork.annotation.Column;
 import com.universal.framwork.annotation.PrimaryKey;
 import com.universal.framwork.annotation.Table;
 import com.universal.framwork.annotation.Transient;
+
 @Table(name="person")
 public class Person
 {
